@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorAccent">@color/purple_200</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.MaterialComponents">
+        <item name="colorControlNormal">@color/lightGrey</item>
+        <item name="colorControlActivated">@color/spotifyGreen</item>
+    </style>
+</resources>

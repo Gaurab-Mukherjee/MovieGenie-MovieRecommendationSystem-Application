@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MovieGenie" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_theme_yellow</item>
+        <item name="colorPrimaryDark">@color/primary_dark_theme_yellow</item>
+        <item name="colorAccent">@color/color_accent_theme_yellow</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

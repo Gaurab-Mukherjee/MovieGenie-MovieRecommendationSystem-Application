@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieGenie</string>
+    <string name="login_txt1">Welcome Back</string>
+    <string name="login_txt2">We missed you! Login to get Started</string>
+    <string name="login_txt3">LOGIN</string>
+    <string name="login_hint1">Email</string>
+    <string name="login_hint2">Password</string>
+    <string name="login_registration_txt">Don\'t have an account? <font color='#DBA800'> Register instead </font></string>
+    <string name="title_activity_home">HomeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

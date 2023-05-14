@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1020328372837",
+    "project_id": "moviegenie-be22f",
+    "storage_bucket": "moviegenie-be22f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020328372837:android:9167d30f0be66b3bb7748c",
+        "android_client_info": {
+          "package_name": "com.binarybrainiac.moviegenie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020328372837-fsq8rtn5gsmaeit36opkgm6r4qpo1etc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.binarybrainiac.moviegenie",
+            "certificate_hash": "5c58d8c28a30429885bf7ed666ffb0bf00745c64"
+          }
+        },
+        {
+          "client_id": "1020328372837-erigrofi63hhpjtavvfh4mnjeqc8u2v4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCej_uGl3AK0nIuki-bFWwcRjXRvVX1MYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020328372837-erigrofi63hhpjtavvfh4mnjeqc8u2v4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

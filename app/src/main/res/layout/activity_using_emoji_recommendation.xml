@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotifyBlack"
+    android:theme="@style/Theme.MaterialComponents"
+    tools:context=".UsingEmojiRecommendationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_dark_theme_yellow"
+                    android:clipToPadding="false"
+                    android:elevation="16dp">
+
+                    <include
+                        android:id="@+id/top_include"
+                        layout="@layout/top_panel_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/radio_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/action"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F3AC; Action"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/drama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F3AD; Drama" />
+
+                            <RadioButton
+                                android:id="@+id/comedy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F921; Comedy" />
+
+
+                            <RadioButton
+                                android:id="@+id/horror"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F47B; Horror" />
+
+                            <RadioButton
+                                android:id="@+id/fantasy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F451; Fantasy" />
+
+                            <RadioButton
+                                android:id="@+id/science_fiction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:checked="false"
+                                android:text="&#x1F680; Science Fiction" />
+
+                            <RadioButton
+                                android:id="@+id/romance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="30"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F498; Romance" />
+
+                            <RadioButton
+                                android:id="@+id/mystery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="30"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F575; Mystery" />
+
+                            <RadioButton
+                                android:id="@+id/family"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="30"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F46A; Family" />
+
+                            <RadioButton
+                                android:id="@+id/crime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="30"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F608; Crime" />
+
+                            <RadioButton
+                                android:id="@+id/adventure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="30"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1FA82; Adventure" />
+
+                            <RadioButton
+                                android:id="@+id/history"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="30"
+                                android:checked="false"
+                                android:fontFamily="@font/gotham_light"
+                                android:text="&#x1F36F; History" />
+                        </RadioGroup>
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                        android:layout_width="170dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="250dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/radio_group"
+                        android:background="@drawable/using_title_recommandation_btn"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/radio_group"
+                        android:fontFamily="@font/gotham_bold"
+                        android:text="Recommended for you"
+                        android:textColor="@color/pearlWhite"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        tools:listitem="@layout/layout_home_activity" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotifyBlack"
+    android:theme="@style/Theme.MaterialComponents"
+    tools:context=".UsingGenreRecommendationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_dark_theme_yellow"
+                    android:clipToPadding="false"
+                    android:elevation="16dp">
+
+                    <include
+                        android:id="@+id/top_include"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        layout="@layout/top_panel_layout" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="Enter Genre"
+                        android:textColorHint="@color/spotifyGreen"
+                        app:boxStrokeColor="@color/spotifyGreen"
+                        app:boxStrokeErrorColor="@color/red"
+                        app:boxStrokeWidth="2dp"
+                        app:errorTextColor="@color/red"
+                        app:hintTextColor="@color/spotifyGreen">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_genre_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham_light"
+                            android:textAllCaps="false"
+                            android:textColor="@color/spotifyGreen"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="Enter Year"
+                        android:textColorHint="@color/spotifyGreen"
+                        app:boxStrokeColor="@color/spotifyGreen"
+                        app:boxStrokeErrorColor="@color/red"
+                        app:boxStrokeWidth="2dp"
+                        app:errorTextColor="@color/red"
+                        app:hintTextColor="@color/spotifyGreen">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham_light"
+                            android:textAllCaps="false"
+                            android:textColor="@color/spotifyGreen"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                        android:layout_width="270dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/using_title_recommandation_btn"
+                        android:shadowColor="#A8A8A8"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="5"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/gotham_bold"
+                        android:text="Recommended for you"
+                        android:textColor="@color/pearlWhite"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        tools:listitem="@layout/layout_home_activity" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

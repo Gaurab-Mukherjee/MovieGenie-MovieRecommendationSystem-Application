@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotifyBlack"
+    tools:context=".MovieDetailsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_dark_theme_yellow"
+                android:clipToPadding="false"
+                android:elevation="16dp">
+
+                <include
+                    android:id="@+id/top_include"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    layout="@layout/top_panel_layout" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgPoster"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/moviegenie_logo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moviegenie_logo" />
+
+                <TextView
+                    android:id="@+id/txtOriginalTitle_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/gotham_bold"
+                    android:text="Original Title (Title)"
+                    android:textColor="@color/pearlWhite"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtOverview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/gotham_medium_1"
+                    android:text="The same problem appears after a MIUI operating system update.
+I have tried all the suggested answers, but nothing worked and I don’t want to lose everything by doing a data wipe.
+The Phone does a partial restart like every 15 seconds."
+                    android:textColor="@color/pearlWhite"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtOriginalLanguage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/gotham_bold"
+                            android:text="USA"
+                            android:textColor="@color/pearlWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25">
+
+                        <TextView
+                            android:id="@+id/txtVoteCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/gotham_bold"
+                            android:text="85"
+                            android:textColor="@color/pearlWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25">
+
+                        <TextView
+                            android:id="@+id/txtReleaseDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/gotham_bold"
+                            android:text="2013"
+                            android:textColor="@color/pearlWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25">
+
+                        <TextView
+                            android:id="@+id/txtVoteAverage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/gotham_bold"
+                            android:text="country"
+                            android:textColor="@color/pearlWhite"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gotham_bold"
+                        android:text="Stars"
+                        android:textColor="@color/pearlWhite"
+                        android:textSize="16sp" />
+
+                    <RatingBar
+                        android:id="@+id/strRating"
+                        style="?android:attr/ratingBarStyleIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="15dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:theme="@style/RatingBar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gotham_bold"
+                        android:text="Genre"
+                        android:textColor="@color/pearlWhite"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="90">
+
+                        <Button
+                            android:id="@+id/btn_genre_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="30"
+                            android:background="@drawable/btn_back_genre"
+                            android:clickable="false"
+                            android:fontFamily="@font/gotham_bold"
+                            android:text="Action"
+                            android:textAllCaps="false"
+                            android:textColor="@color/pearlWhite"
+                            android:textSize="18sp"
+                            android:visibility="visible" />
+
+                        <Button
+                            android:id="@+id/btn_genre_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="30"
+                            android:background="@drawable/btn_back_genre"
+                            android:clickable="false"
+                            android:fontFamily="@font/gotham_bold"
+                            android:text="Romance"
+                            android:textAllCaps="false"
+                            android:textColor="@color/pearlWhite"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_genre_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="30"
+                            android:background="@drawable/btn_back_genre"
+                            android:clickable="false"
+                            android:fontFamily="@font/gotham_bold"
+                            android:text="History"
+                            android:textAllCaps="false"
+                            android:textColor="@color/pearlWhite"
+                            android:textSize="18sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
